@@ -1,0 +1,21 @@
+Create database employee_details
+
+use employee_details
+
+Create Table Employees(
+EmployeeID INT PRIMARY KEY,
+FirstName VARCHAR(50),
+LastName VARCHAR(50),
+Department VARCHAR(50),
+Salary DECIMAL(10,2),
+HireDate Date
+);
+
+
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Salary, HireDate)
+VALUES
+(1, 'John', 'Doe', 'HR',50000, '2020-01-15'),
+(2, 'Jane', 'Smith', 'Finanace',60000, '2021-05-15'),
+(3, 'Alice', 'Johnson', 'HR',50000, '2022-01-23'),
+(4, 'Bob', 'Brown', 'HR',50000, '2019-04-15'),
+(5, 'Charlie', 'Davis', 'HR',50000, '2023-02-28');
